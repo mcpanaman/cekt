@@ -1,6 +1,6 @@
 package at.jku.ce;
 
-public class DomainObject {
+public class DomainObject implementsComparable<DomainObject> {
 	
 	private String uuid = UUID.randomUUID().toString();
 	private String name;
@@ -20,5 +20,5 @@ public class DomainObject {
 	
 	public String getName() {		return name;	}
 		public void setName(final String pname) {		this.name = pname;	}
-	//Release1
+
 }
