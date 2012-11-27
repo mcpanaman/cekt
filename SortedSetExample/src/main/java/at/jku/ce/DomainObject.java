@@ -20,4 +20,5 @@ public class DomainObject {
 	
 	public String getName() {		return name;	}
 		public void setName(final String pname) {		this.name = pname;	}
+	
 }
