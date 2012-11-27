@@ -18,7 +18,7 @@ public class Main {
 		objectSet.add(DomainFactory.createDomainObject("Walter", "Comment1"));
 		objectSet.add(DomainFactory.createDomainObject("Hans", "Comment1"));
 		objectSet.add(DomainFactory.createDomainObject("Paul", "Comment1"));
-		objectSet.add(DomainFactory.createDomainObject("Claudia", "Comment1"));		for (DomainObject domainObject : objectSet) {		  LOGGER.debug(domainObject.id);		}
+		objectSet.add(DomainFactory.createDomainObject("Claudia", "Comment1"));		for (DomainObject domainObject : objectSet) {		  LOGGER.debug(domainObject.getUuid);		}
 	}
 
 }
