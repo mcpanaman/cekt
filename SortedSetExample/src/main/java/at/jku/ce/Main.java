@@ -14,7 +14,11 @@ public class Main {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		Set<DomainObject> objectSet = new HashSet<DomainObject>();		objectSet.add(new DomainObject("Helga"));		objectSet.add(new DomainObject("Walter"));		objectSet.add(new DomainObject("Hans"));		objectSet.add(new DomainObject("Paula"));		objectSet.add(new DomainObject("Claudia"));		for (DomainObject domainObject : objectSet) {		  LOGGER.debug(domainObject.id);		}
+		Set<DomainObject> objectSet = new HashSet<DomainObject>();		objectSet.add(DomainFactory.createDomainObject("Helga", "Comment1"));
+		objectSet.add(DomainFactory.createDomainObject("Walter", "Comment1"));
+		objectSet.add(DomainFactory.createDomainObject("Hans", "Comment1"));
+		objectSet.add(DomainFactory.createDomainObject("Paul", "Comment1"));
+		objectSet.add(DomainFactory.createDomainObject("Claudia", "Comment1"));		for (DomainObject domainObject : objectSet) {		  LOGGER.debug(domainObject.id);		}
 	}
 
 }
