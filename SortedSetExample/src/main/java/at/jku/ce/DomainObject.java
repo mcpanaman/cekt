@@ -9,10 +9,10 @@ public class DomainObject {
 	/** 
 	* Default constructor 
 	*/ 
-	public DomainObject() {
+	protected DomainObject() {
 		super();
 	}
-		public DomainObject(String id, String comment) {		super();		this.id = id;	}
+		protected DomainObject(String id, String comment) {		super();		this.id = id;	}
 	
 	public String getUuid() {       return id;	}
 		public String getComment() {		return comment;	}
